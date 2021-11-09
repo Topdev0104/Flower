@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "SegoePrint-Bold";
+  src: url("../public/fonts/SegoePrint-Bold.woff2") format("woff2"),
+    url("../public/fonts/SegoePrint-Bold.woff") format("woff"),
+    url("../public/fonts/SegoePrint-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+.garden {
+  background-attachment: fixed;
+  background-image: url("/images/backgrounds/gardenFullRes.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+  }
+}
+
+.garden1 {
+  background-attachment: fixed;
+  background-image: url("/images/backgrounds/dayBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+  }
+}
+
+.garden2 {
+  background-attachment: fixed;
+  background-image: url("/images/backgrounds/nightbackground1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+  }
+}
+
+
+.content-controls {
+  display: none;
+  font-family: "SegoePrint-Bold";
+  font-weight: normal;
+  font-style: normal;
+
+  @media (min-width: 800px) and (max-width: 1700px) {
+    bottom: 10%;
+    display: block;
+    position: absolute;
+    right: 0%;
+    transform: rotateZ(-7deg);
+  }
+
+  @media (min-width: 1700px) {
+    bottom: 10%;
+    display: block;
+    position: absolute;
+    right: 10%;
+    transform: rotateZ(-7deg);
+  }
+  &::after {
+    background-color: #6f1e1e;
+    bottom: -27px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 15px;
+    transform: translateX(-50%) skewY(-50deg);
+  }
+
+  &::before {
+    background-color: #6f1e1e;
+    border-radius: 20px 20px 0 0;
+    bottom: -20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: -20px;
+    transform: translateX(-50%);
+    width: 10px;
+  }
+}
+
+.changeContentButton {
+  align-items: center;
+  background-color: #ad3639;
+  border-radius: 0px 3px 3px 0px;
+  box-shadow: 0px 3px #772823;
+  color: white;
+  display: flex;
+  font-size: 1.0rem;
+  height: 60px;
+  justify-content: center;
+  position: relative;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  transition-property: transform;
+  width: 10.2rem;
+  z-index: 10;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &.triangleLeft {
+    background-color: #772823;
+    border-radius: 3px 0px 0px 3px;
+    box-shadow: -1px 2px #501b17;
+
+    &:hover {
+      transform: rotateZ(-4deg);
+    }
+
+    &:after {
+      border-bottom: 30px solid transparent;
+      border-right: 30px solid #772823;
+      border-top: 30px solid transparent;
+      bottom: 0;
+      content: "";
+      height: 0;
+      filter: drop-shadow(-2px 1px #501b17);
+      left: -29px;
+      position: absolute;
+      width: 0;
+    }
+  }
+
+  &.triangleRight {
+    &:hover {
+      transform: rotateZ(3deg);
+    }
+
+    &:before {
+      border-bottom: 30px solid transparent;
+      border-left: 30px solid #ad3639;
+      border-top: 30px solid transparent;
+      bottom: 0;
+      content: "";
+      height: 0;
+      filter: drop-shadow(0px 3px #772823);
+      position: absolute;
+      right: -29px;
+      width: 0;
+    }
+  }
+}

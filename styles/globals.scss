@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-y: overlay;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  & .nav-primary a {
+    min-width: 85px;
+    text-align: center;
+
+    &[aria-current] {
+      border-bottom: 4px solid #10b981;
+      color: #10b981;
+    }
+  }
+
+  & .mobile-menu a {
+    &[aria-current] {
+      color: #ffffff;
+      background-color: #10b981;
+    }
+  }
+}

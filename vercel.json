@@ -1,0 +1,7 @@
+{
+    "functions": {
+       "pages/api/meditations.js": {
+          "includeFiles": "public/meditation/"
+       }
+    }
+ }

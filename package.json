@@ -1,0 +1,41 @@
+{
+  "name": "nubloom",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@ethersproject/bignumber": "^5.4.2",
+    "@ethersproject/contracts": "^5.4.1",
+    "@ethersproject/providers": "^5.4.5",
+    "@ethersproject/units": "^5.4.0",
+    "@ethersproject/wallet": "^5.4.0",
+    "@metamask/detect-provider": "^1.2.0",
+    "@metamask/onboarding": "^1.0.1",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "cors": "^2.8.5",
+    "next": "11.1.2",
+    "podcast-api": "^1.0.9",
+    "radio-browser-api": "^4.0.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-tsparticles": "^1.36.0",
+    "sass": "^1.43.2",
+    "sharp": "^0.29.1",
+    "swr": "^1.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.17"
+  }
+}
